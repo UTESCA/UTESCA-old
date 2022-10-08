@@ -1,0 +1,19 @@
+{
+  "short_name": "Fintorch",
+  "name": "Fintorch App",
+  "icons": [
+    {
+      "src": "fintorch-logo.png",
+      "type": "image/png",
+      "sizes": "1677x2529"
+    },{
+      "src": "fintorch-logo-square.png",
+      "type": "image/png",
+      "sizes": "2529x2529"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
