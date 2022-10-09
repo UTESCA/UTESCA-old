@@ -15,9 +15,9 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Slide from "@mui/material/Slide";
-
+import { Link } from "react-router-dom";
+import navItems from "../../data/nav.json";
 const drawerWidth = 240;
-const navItems = ["Home", "Project", "About"];
 function HideOnScroll(props) {
   const { children, window } = props;
   // Note that you normally won't need to set the window ref as useScrollTrigger
@@ -53,12 +53,14 @@ function NavigationBar(props) {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
+        {navItems.map((item, index) => (
+          <Link to={item.link} className="no-underline" key={item.name}>
+            <ListItem disablePadding>
+              <ListItemButton sx={{ textAlign: "center" }}>
+                <ListItemText primary={item.name} />
+              </ListItemButton>
+            </ListItem>
+          </Link>
         ))}
       </List>
     </Box>
@@ -90,9 +92,9 @@ function NavigationBar(props) {
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems.map((item) => (
-                <Button key={item} sx={{ color: "#fff" }}>
-                  {item}
-                </Button>
+                <Link to={item.link} className="no-underline" key={item.name}>
+                  <Button sx={{ color: "#fff" }}>{item.name}</Button>
+                </Link>
               ))}
             </Box>
           </Toolbar>

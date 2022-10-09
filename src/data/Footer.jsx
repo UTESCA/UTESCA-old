@@ -6,17 +6,17 @@ const data = [
   {
     name: "Instagram",
     logo: <Instagram style={{ height: 40, width: 40 }} />,
-    link: "https://www.github.com/xiao215",
+    link: "https://www.instagram.com/utesca/",
   },
   {
     name: "Facebook",
     logo: <Facebook style={{ height: 40, width: 40 }} />,
-    link: "https://discordapp.com/users/720743692251562204",
+    link: "https://www.facebook.com/uoftesca/",
   },
   {
     name: "LinkedIn",
     logo: <Linkedin style={{ height: 40, width: 40 }} className="fill-white" />,
-    link: "https://www.linkedin.com/in/xiao215/",
+    link: "https://www.linkedin.com/company/utescaconsulting/",
   },
 ];
 export default data;

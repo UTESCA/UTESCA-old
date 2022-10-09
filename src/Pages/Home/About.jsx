@@ -35,7 +35,7 @@ function About() {
       </div>
       <div className="text-center">
         <div className="flex justify-center">
-          <div className="text-5xl mr-2 font-semibold text-transparent bg-clip-text bg-purple-light">
+          <div className="text-5xl mr-2 font-semibold text-transparent bg-clip-text bg-purple-light w-[10%]">
             1
           </div>
           <div className="text-2xl">

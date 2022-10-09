@@ -2,6 +2,7 @@ import "./project.css";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
 import projectData from "../../data/Project";
 import ScreenSize from "../../Components/Screen/ScreenSize";
+import Button from "../../Components/Button/Button";
 function Project() {
   const { width } = ScreenSize();
 
@@ -45,6 +46,9 @@ function Project() {
           );
         }
       })()}
+      <div className="flex justify-center">
+        <Button name="View All" size={2} />
+      </div>
     </div>
   );
 }
