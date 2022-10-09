@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 export default function ActionAreaCard({ title, description, image }) {
   return (
-    <CardActionArea className="h-full cardComp transition duration-700 hover:scale-110">
+    <CardActionArea className="h-full transition duration-700 hover:scale-110 font-raleway">
       <Card sx={{ maxWidth: 345 }} className="h-full rounded-2xl cardComp">
         <CardMedia
           component="img"

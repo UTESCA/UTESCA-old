@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import Home from "./Pages/Home/Home";
 import Project from "./Pages/Project/Project";
-
+import Footer from "./Components/Footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./tailwind.css";
@@ -25,12 +25,12 @@ root.render(
       <ThemeProvider theme={theme}>
         <Router>
           <NavigationBar />
-
           <Routes>
             <Route path="*" element={<Home />} exact />
             <Route path="/project" element={<Project />} />
           </Routes>
         </Router>
+        <Footer />
       </ThemeProvider>
     </StyledEngineProvider>
   </React.StrictMode>

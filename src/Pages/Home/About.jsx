@@ -19,12 +19,12 @@ function About() {
             </div>
           </div>
           <div>
-            <div className="text-transparent bg-clip-text bg-[#5433C2]">
+            <div className="text-transparent bg-clip-text bg-purple-default">
               Companies
             </div>
           </div>
           <div>
-            <div className="text-transparent bg-clip-text bg-blue-default">
+            <div className="text-transparent bg-clip-text bg-purple-bright">
               Everyone
             </div>
           </div>
