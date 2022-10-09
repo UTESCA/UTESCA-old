@@ -26,9 +26,14 @@ function HideOnScroll(props) {
   const trigger = useScrollTrigger({
     target: window ? window() : undefined,
   });
-
+  const tailwindStyle = "shadow-md bg-blue-medium bg-opacity-80";
   return (
-    <Slide appear={false} direction="down" in={!trigger}>
+    <Slide
+      appear={false}
+      direction="down"
+      in={!trigger}
+      className={tailwindStyle}
+    >
       {children}
     </Slide>
   );
@@ -63,7 +68,7 @@ function NavigationBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex" }} className="font-raleway">
       <HideOnScroll>
         <AppBar component="nav">
           <Toolbar>
